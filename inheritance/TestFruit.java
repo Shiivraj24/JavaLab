@@ -11,7 +11,7 @@ public class TestFruit {
 		Fruit[] basket = new Fruit[sc.nextInt()];
 		int index = 0, ch = 0;
 		System.out.println("1.Mango \n 2.Apple \n 3.Orange \n 4.All fruit \n 5.Fresh Fruits");
-		System.out.println("Enter ky pahija tula ");
+		
 	
 		do {
 			ch = sc.nextInt();
@@ -19,8 +19,8 @@ public class TestFruit {
 			case 1:
 				if (index < basket.length) {
 					basket[index] = new Mango("Mango", "yellow", 100.00, true);
-					System.out.println("You Entered Amba");
-					System.out.println("Enter ky pahija tula ");
+					System.out.println("You Entered Mango");
+					
 					index++;
 				} else {
 					System.out.println("Array is full");
@@ -30,8 +30,8 @@ public class TestFruit {
 			case 2:
 				if (index < basket.length) {
 					basket[index] = new Apple("Apple", "red", 99.99, true);
-					System.out.println("You Entered safarchand");
-					System.out.println("Enter ky pahija tula ");
+					System.out.println("You Entered Apple");
+					
 					index++;
 				} else {
 					System.out.println("Array is full");
@@ -41,8 +41,8 @@ public class TestFruit {
 			case 3:
 				if (index < basket.length) {
 					basket[index] = new Orange("Orange", "Orange_Color", 77.66, true);
-					System.out.println("You Entered santra");
-					System.out.println("Enter ky pahija tula ");
+					System.out.println("You Entered Orange");
+					
 					index++;
 				} else {
 					System.out.println("Array is full");
@@ -57,7 +57,7 @@ public class TestFruit {
 					}
 					
 				}
-				System.out.println("ky pahija tula ");
+			
 				break;
 			case 5:
 				for (Fruit f : basket) {
