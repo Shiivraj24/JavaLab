@@ -1,0 +1,29 @@
+package Tester;
+
+import java.util.List;
+import java.util.Scanner;
+import ShopUtils.ShopUtils.populatelist;
+import com.app.core.*;
+public class Test {
+
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)){
+			
+			List<Products> list = populateList();
+			
+			switch () {
+			case 1:
+				
+				break;
+
+			case 0:
+				break;
+			}
+			
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

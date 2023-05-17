@@ -1,0 +1,27 @@
+package Tester;
+
+import java.util.Scanner;
+import ShopUtils.ShopUtils;
+public class Test {
+
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)){
+			
+			List<Products> list = populatelist();
+			
+			switch () {
+			case 1:
+				
+				break;
+
+			case 0:
+				break;
+			}
+			
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

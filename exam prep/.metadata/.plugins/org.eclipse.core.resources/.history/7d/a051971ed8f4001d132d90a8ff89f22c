@@ -1,0 +1,16 @@
+package ShopUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.app.core.Products;
+import com.app.core.Category;
+import java.time.LocalDate;
+import static validationRules.validations.*;
+public interface ShopUtils {
+       static List<Products> populateList(){
+    	   List<Products> list = new ArrayList<>();
+    	   
+    	   list.add(validateAllInputs(100, "White_Bread", "Tasty Bread", 70, 35, "BREAD","2022-05-09"));
+    	   return list;
+       }
+}

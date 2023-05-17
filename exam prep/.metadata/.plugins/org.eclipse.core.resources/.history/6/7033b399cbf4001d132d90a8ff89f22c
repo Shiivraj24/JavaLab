@@ -1,0 +1,14 @@
+package ShopUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.app.core.Products;
+import com.app.core.Category;
+import java.time.LocalDate;
+public interface ShopUtils {
+       static List<Integer> populateList(){
+    	   List<Integer> list = new ArrayList<>();
+    	   
+    	   list.add(new Products(100, "White_Bread", "Tasty Bread", 70, 35, BREAD, parse("2022-05-09")));
+       }
+}

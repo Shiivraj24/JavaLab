@@ -1,0 +1,21 @@
+package ShopUtils;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.List;
+
+import com.app.core.Products;
+
+public interface IOUtils {
+       static void storeProductDetails(String name ,List<Products> list) {
+    	   try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(name))){
+    		out.writeObject(list);   
+    	
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+       }
+}
